@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout
+        android:id="@+id/ll_guide_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/public_tab_bg"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <RelativeLayout
+            android:id="@+id/back_tab_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:layout_marginTop="0.5dp"
+            android:background="@drawable/web_btn_bg_slt" >
+
+            <ImageView
+                android:id="@+id/iv_web_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingBottom="10dp"
+                android:paddingTop="9.5dp"
+                android:src="@drawable/web_back" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/forward_tab_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:layout_marginTop="0.5dp"
+            android:background="@drawable/web_btn_bg_slt" >
+
+            <ImageView
+                android:id="@+id/iv_web_forward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingBottom="10dp"
+                android:paddingTop="9.5dp"
+                android:src="@drawable/web_forward" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/refresh_tab_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:layout_marginTop="0.5dp"
+            android:background="@drawable/web_btn_bg_slt" >
+
+            <ImageView
+                android:id="@+id/iv_web_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingBottom="10dp"
+                android:paddingTop="9.5dp"
+                android:src="@drawable/web_refresh" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/wv_site"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_above="@id/ll_guide_tab"
+        android:background="#f8f8f8" />
+
+    <RelativeLayout
+        android:id="@+id/rl_main_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/public_title_bg" >
+
+        <TextView
+            android:id="@+id/tv_tab_site_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/title_back_bg_slt"
+            android:clickable="true"
+            android:drawableLeft="@drawable/public_btnback_titlebar_nm"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:onClick="doBack"
+            android:paddingLeft="16dp"
+            android:paddingRight="15dp"
+            android:text="浏览"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </RelativeLayout>
+    
+    <ProgressBar
+         android:id="@+id/pb_web" 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerInParent="true"
+         android:visibility="gone"
+         style="@android:style/Widget.Holo.ProgressBar"/>
+
+</RelativeLayout>

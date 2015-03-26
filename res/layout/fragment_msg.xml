@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.echo.onlineshoppingsys.view.XListView
+            android:id="@+id/list_thread"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:clickable="true"
+            android:divider="#dcdcdc"
+            android:dividerHeight="1px"
+            android:scrollbarSize="4dp"
+            android:scrollbarThumbVertical="@drawable/scrollbar_thumb_vertical"
+            android:splitMotionEvents="false" />
+
+        <TextView 
+            android:id="@+id/tv_no_msg_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="没有银行购物短信"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/cor2"/>
+    </RelativeLayout>
+
+</LinearLayout>

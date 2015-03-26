@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/list_bg_item_slt"
+    android:layout_height="wrap_content" > <!-- android:background="#FFAABBCC" -->
+
+    <RelativeLayout
+        android:id="@+id/file_select_item"
+        android:layout_width="fill_parent"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:layout_height="wrap_content" >
+
+        <com.echo.onlineshoppingsys.view.RoundImageView
+            android:id="@+id/site_icon"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/jd_icon" />
+
+
+            <TextView
+                android:id="@+id/site_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/site_icon"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:text="淘宝"
+                android:textColor="#333333"
+                android:textSize="16dp" />
+            
+            <ImageView 
+                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/public_icon_content_right"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

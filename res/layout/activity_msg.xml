@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <com.echo.onlineshoppingsys.view.XListView
+        android:id="@+id/list_msg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:listSelector="#00000000"
+        android:background="#f8f8f8"
+        android:scrollbarSize="4dp"
+        android:scrollbarThumbVertical="@drawable/scrollbar_thumb_vertical"
+        android:splitMotionEvents="false" />
+
+    <RelativeLayout
+        android:id="@+id/rl_main_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/public_title_bg" >
+
+        <TextView
+            android:id="@+id/tv_tab_msg_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/title_back_bg_slt"
+            android:clickable="true"
+            android:drawableLeft="@drawable/public_btnback_titlebar_nm"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:onClick="doBack"
+            android:paddingLeft="16dp"
+            android:paddingRight="15dp"
+            android:text="消息"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </RelativeLayout>
+</RelativeLayout>

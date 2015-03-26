@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_bg_item_slt"
+    android:clickable="true" > <!-- android:background="#FFAABBCC" -->
+
+    <RelativeLayout
+        android:id="@+id/rl_portrait_and_count"
+        android:layout_width="81dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <com.echo.onlineshoppingsys.view.RoundImageView
+            android:id="@+id/conv_portrait"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/icon_default_avatar" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_toRightOf="@id/rl_portrait_and_count" >
+
+        <TextView
+            android:id="@+id/conv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="17dp"
+            android:gravity="center_vertical"
+            android:text="time"
+            android:textColor="#bbbbbb"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/conv_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@id/conv_date"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="names"
+            android:textColor="#333333"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/conv_note"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/conv_name"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:singleLine="true"
+            android:text="11111111111111111"
+            android:textColor="#aaaaaa"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

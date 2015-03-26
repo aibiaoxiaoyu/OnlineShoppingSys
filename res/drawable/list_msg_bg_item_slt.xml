@@ -1,0 +1,9 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- <item android:drawable="@drawable/public_massage_bg_1" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/public_massage_bg"></item> -->
+    
+    <item android:drawable="@drawable/chat_from_bg_pressed" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/chat_from_bg_normal"></item>
+
+</selector>
